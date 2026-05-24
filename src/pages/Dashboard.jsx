@@ -37,7 +37,9 @@ function Dashboard({ user }) {
 
     <div className='page-container'>
 
-      <h1>Welcome {user.username}</h1>
+      <h1 className='page-title'>
+        Welcome back, {user.username}
+      </h1>
 
       <h2 className='dashboard-title'>
         My Created Events
@@ -45,7 +47,10 @@ function Dashboard({ user }) {
 
       {events.length === 0 ? (
 
-        <p>No events created yet</p>
+        <div className='empty-state'>
+          <h3>No events created yet</h3>
+          <p>Create your first event and start planning.</p>
+        </div>
 
       ) : (
 

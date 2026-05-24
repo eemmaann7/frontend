@@ -88,6 +88,10 @@ function EventDetails({ user }) {
 
     <div className='page-container'>
 
+      <Link className='back-btn' to='/events'>
+        ← Back to Events
+      </Link>
+
       <div className='details-card'>
 
         <h1>{event.title}</h1>
@@ -134,7 +138,7 @@ function EventDetails({ user }) {
         {user && (
 
           <button onClick={handleAttend}>
-            Attend Event
+            Join Event
           </button>
 
         )}

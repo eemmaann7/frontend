@@ -31,7 +31,11 @@ function AllEvents() {
 
     <div className='page-container'>
 
-      <h1>All Events</h1>
+      <h1 className='page-title'>All Events</h1>
+
+      <p className='page-subtitle'>
+        Explore all available events and join your favorites.
+      </p>
 
       <div className='events-grid'>
 
